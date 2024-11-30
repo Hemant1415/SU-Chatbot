@@ -2,6 +2,12 @@
 
 SUChatBot is a Flask-based chatbot application that allows users to interact with a chatbot, submit feedback, and explore similar queries.  
 
+## Team  
+
+- **Team Leader**: Hemant Jangde  
+- **Team Member**: Anshul Sharma  
+
+
 ## Features  
 - **Interactive Chat Interface**: Users can type queries and view chatbot responses.  
 - **Feedback Submission**: Users can provide feedback on specific chatbot responses.  
