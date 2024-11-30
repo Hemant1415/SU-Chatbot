@@ -3,8 +3,7 @@ from sentence_transformers import SentenceTransformer
 import psycopg2
 import random
 from together import Together
-client = Together(api_key="debb3374ec1124bc4e52d5ff75fba20fd11c5b207fd9dc8c325a955e5459ca87")
-
+client = Together(api_key="")
 
 # Generating 
 random_integer = random.randint(10**11, 10**12 - 1)
