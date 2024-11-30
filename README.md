@@ -1,35 +1,23 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>SUChatBot</title>  
-    <link rel="stylesheet" href="/static/home.css">  
-</head>  
-<body>  
+# SUChatBot  
 
-  <div class="navbar">  
-    <div class="nav-buttons">  
-        <button><a href="/">Home</a></button>  
-        <button><a href="/about">AboutUs</a></button>  
-        <button><a href="/contact">ContactUs</a></button>  
-    </div>  
-    <div class="site-name"><b>SUChatBot</b></div>  
-  </div>  
+SUChatBot is a Flask-based chatbot application that allows users to interact with a chatbot, submit feedback, and explore similar queries.  
 
-  <!-- Chat container with scroll -->  
-  <div class="chat-container">  
-      {% for message in chat_history %}  
-          <div class="chat-bubble user-bubble">{{ message.query }}</div>  
-          <div class="chat-bubble bot-bubble">{{ message.response }}</div>  
-          <form method="post" id="queryForm" action="/submitf">  
-              <input type="hidden" name="query" value="{{message.query}}">  
-              <input type="hidden" name="response" value="{{message.response}}">  
-              <button type="submit" id="feedback">Send feedback</button>  
-          </form>  
-      {% endfor %}  
-      <hr>  
+## Features  
+- **Interactive Chat Interface**: Users can type queries and view chatbot responses.  
+- **Feedback Submission**: Users can provide feedback on specific chatbot responses.  
+- **Similar Queries**: Displays similar queries with responses for further exploration.  
+- **Responsive Design**: Designed to work across devices (desktop and mobile).  
 
-      <div>  
-        {% if remaining %
+## Project Structure  
 
+```plaintext  
+.
+├── app.py                 # Main Flask application file  
+├── templates/  
+│   └── index.html         # Main HTML template  
+├── static/  
+│   ├── home.css           # Stylesheet for the application  
+│   └── main.js            # JavaScript for interactivity  
+├── requirements.txt       # List of Python dependencies  
+├── README.md              # Project documentation  
+└── .gitignore             # Ignored files for the repository  
