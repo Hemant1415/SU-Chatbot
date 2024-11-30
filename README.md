@@ -8,16 +8,4 @@ SUChatBot is a Flask-based chatbot application that allows users to interact wit
 - **Similar Queries**: Displays similar queries with responses for further exploration.  
 - **Responsive Design**: Designed to work across devices (desktop and mobile).  
 
-## Project Structure  
 
-```plaintext  
-.
-├── app.py                 # Main Flask application file  
-├── templates/  
-│   └── index.html         # Main HTML template  
-├── static/  
-│   ├── home.css           # Stylesheet for the application  
-│   └── main.js            # JavaScript for interactivity  
-├── requirements.txt       # List of Python dependencies  
-├── README.md              # Project documentation  
-└── .gitignore             # Ignored files for the repository  
